@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC8D996226DD208D005B883B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D996126DD208D005B883B /* AppDelegate.swift */; };
+		AC8D996426DD208D005B883B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D996326DD208D005B883B /* SceneDelegate.swift */; };
+		AC8D996626DD208D005B883B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D996526DD208D005B883B /* ViewController.swift */; };
+		AC8D996926DD208D005B883B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8D996726DD208D005B883B /* Main.storyboard */; };
+		AC8D996B26DD208F005B883B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8D996A26DD208F005B883B /* Assets.xcassets */; };
+		AC8D996E26DD208F005B883B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8D996C26DD208F005B883B /* LaunchScreen.storyboard */; };
+		AC8D997626DD2213005B883B /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D997526DD2213005B883B /* Employees.swift */; };
+		AC8D997826DD2226005B883B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D997726DD2226005B883B /* NetworkService.swift */; };
+		AC8D997A26DD223B005B883B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D997926DD223B005B883B /* Constants.swift */; };
+		AC8D997C26DD2259005B883B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D997B26DD2259005B883B /* ViewModel.swift */; };
+		AC8D997E26DD227F005B883B /* EmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D997D26DD227F005B883B /* EmployeesView.swift */; };
+		AC8D998026DD22A6005B883B /* EmployeesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D997F26DD22A6005B883B /* EmployeesTableViewCell.swift */; };
+		AC8D998226DD2829005B883B /* EmployeesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D998126DD2829005B883B /* EmployeesDataSource.swift */; };
+		AC8D998826E67782005B883B /* EmployeesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D998726E67782005B883B /* EmployeesRouter.swift */; };
+		AC8D99AE26E75A0B005B883B /* AvitoFrolov.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC8D99AC26E75A0B005B883B /* AvitoFrolov.xcdatamodeld */; };
+		AC8D99B626E7C636005B883B /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D99B426E7C636005B883B /* Person+CoreDataClass.swift */; };
+		AC8D99B726E7C636005B883B /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D99B526E7C636005B883B /* Person+CoreDataProperties.swift */; };
+		AC8D99B926E7C94E005B883B /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D99B826E7C94E005B883B /* UserDefaultsService.swift */; };
+		C69914D886E326C97D3E78D5 /* Pods_AvitoFrolov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8C4F8A21FA32C6CC16BD4F /* Pods_AvitoFrolov.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		393F0D66145078DC8343D19D /* Pods-AvitoFrolov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvitoFrolov.release.xcconfig"; path = "Target Support Files/Pods-AvitoFrolov/Pods-AvitoFrolov.release.xcconfig"; sourceTree = "<group>"; };
+		58CD9711E06421A05A3008FF /* Pods-AvitoFrolov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvitoFrolov.debug.xcconfig"; path = "Target Support Files/Pods-AvitoFrolov/Pods-AvitoFrolov.debug.xcconfig"; sourceTree = "<group>"; };
+		AB8C4F8A21FA32C6CC16BD4F /* Pods_AvitoFrolov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvitoFrolov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8D995E26DD208D005B883B /* AvitoFrolov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvitoFrolov.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8D996126DD208D005B883B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC8D996326DD208D005B883B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC8D996526DD208D005B883B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC8D996826DD208D005B883B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC8D996A26DD208F005B883B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC8D996D26DD208F005B883B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC8D996F26DD208F005B883B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8D997526DD2213005B883B /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
+		AC8D997726DD2226005B883B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AC8D997926DD223B005B883B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AC8D997B26DD2259005B883B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AC8D997D26DD227F005B883B /* EmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesView.swift; sourceTree = "<group>"; };
+		AC8D997F26DD22A6005B883B /* EmployeesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesTableViewCell.swift; sourceTree = "<group>"; };
+		AC8D998126DD2829005B883B /* EmployeesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesDataSource.swift; sourceTree = "<group>"; };
+		AC8D998726E67782005B883B /* EmployeesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesRouter.swift; sourceTree = "<group>"; };
+		AC8D99AD26E75A0B005B883B /* AvitoFrolov.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AvitoFrolov.xcdatamodel; sourceTree = "<group>"; };
+		AC8D99B426E7C636005B883B /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AC8D99B526E7C636005B883B /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AC8D99B826E7C94E005B883B /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC8D995B26DD208D005B883B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C69914D886E326C97D3E78D5 /* Pods_AvitoFrolov.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B5FDC6E1BC8E3B5D204F5A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB8C4F8A21FA32C6CC16BD4F /* Pods_AvitoFrolov.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC8D995526DD208D005B883B = {
+			isa = PBXGroup;
+			children = (
+				AC8D996026DD208D005B883B /* AvitoFrolov */,
+				AC8D995F26DD208D005B883B /* Products */,
+				BD90A2381C3E5D3F973B3012 /* Pods */,
+				4B5FDC6E1BC8E3B5D204F5A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC8D995F26DD208D005B883B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D995E26DD208D005B883B /* AvitoFrolov.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC8D996026DD208D005B883B /* AvitoFrolov */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D99AF26E7A304005B883B /* Model */,
+				AC8D996126DD208D005B883B /* AppDelegate.swift */,
+				AC8D996326DD208D005B883B /* SceneDelegate.swift */,
+				AC8D997526DD2213005B883B /* Employees.swift */,
+				AC8D996526DD208D005B883B /* ViewController.swift */,
+				AC8D997726DD2226005B883B /* NetworkService.swift */,
+				AC8D99B826E7C94E005B883B /* UserDefaultsService.swift */,
+				AC8D997926DD223B005B883B /* Constants.swift */,
+				AC8D997B26DD2259005B883B /* ViewModel.swift */,
+				AC8D998726E67782005B883B /* EmployeesRouter.swift */,
+				AC8D997D26DD227F005B883B /* EmployeesView.swift */,
+				AC8D997F26DD22A6005B883B /* EmployeesTableViewCell.swift */,
+				AC8D998126DD2829005B883B /* EmployeesDataSource.swift */,
+				AC8D996726DD208D005B883B /* Main.storyboard */,
+				AC8D996A26DD208F005B883B /* Assets.xcassets */,
+				AC8D996C26DD208F005B883B /* LaunchScreen.storyboard */,
+				AC8D996F26DD208F005B883B /* Info.plist */,
+				AC8D99AC26E75A0B005B883B /* AvitoFrolov.xcdatamodeld */,
+			);
+			path = AvitoFrolov;
+			sourceTree = "<group>";
+		};
+		AC8D99AF26E7A304005B883B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D99B426E7C636005B883B /* Person+CoreDataClass.swift */,
+				AC8D99B526E7C636005B883B /* Person+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD90A2381C3E5D3F973B3012 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58CD9711E06421A05A3008FF /* Pods-AvitoFrolov.debug.xcconfig */,
+				393F0D66145078DC8343D19D /* Pods-AvitoFrolov.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC8D995D26DD208D005B883B /* AvitoFrolov */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8D997226DD208F005B883B /* Build configuration list for PBXNativeTarget "AvitoFrolov" */;
+			buildPhases = (
+				709E2F1BB5CB2F158A5097F8 /* [CP] Check Pods Manifest.lock */,
+				AC8D995A26DD208D005B883B /* Sources */,
+				AC8D995B26DD208D005B883B /* Frameworks */,
+				AC8D995C26DD208D005B883B /* Resources */,
+				752094BE8F44DC753B744DCC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvitoFrolov;
+			productName = AvitoFrolov;
+			productReference = AC8D995E26DD208D005B883B /* AvitoFrolov.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC8D995626DD208D005B883B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AC8D995D26DD208D005B883B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = AC8D995926DD208D005B883B /* Build configuration list for PBXProject "AvitoFrolov" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC8D995526DD208D005B883B;
+			productRefGroup = AC8D995F26DD208D005B883B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC8D995D26DD208D005B883B /* AvitoFrolov */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC8D995C26DD208D005B883B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8D996E26DD208F005B883B /* LaunchScreen.storyboard in Resources */,
+				AC8D996B26DD208F005B883B /* Assets.xcassets in Resources */,
+				AC8D996926DD208D005B883B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		709E2F1BB5CB2F158A5097F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvitoFrolov-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		752094BE8F44DC753B744DCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AvitoFrolov/Pods-AvitoFrolov-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AvitoFrolov/Pods-AvitoFrolov-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AvitoFrolov/Pods-AvitoFrolov-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC8D995A26DD208D005B883B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8D99B726E7C636005B883B /* Person+CoreDataProperties.swift in Sources */,
+				AC8D998826E67782005B883B /* EmployeesRouter.swift in Sources */,
+				AC8D997826DD2226005B883B /* NetworkService.swift in Sources */,
+				AC8D996626DD208D005B883B /* ViewController.swift in Sources */,
+				AC8D997626DD2213005B883B /* Employees.swift in Sources */,
+				AC8D996226DD208D005B883B /* AppDelegate.swift in Sources */,
+				AC8D998226DD2829005B883B /* EmployeesDataSource.swift in Sources */,
+				AC8D997E26DD227F005B883B /* EmployeesView.swift in Sources */,
+				AC8D996426DD208D005B883B /* SceneDelegate.swift in Sources */,
+				AC8D997A26DD223B005B883B /* Constants.swift in Sources */,
+				AC8D998026DD22A6005B883B /* EmployeesTableViewCell.swift in Sources */,
+				AC8D99B626E7C636005B883B /* Person+CoreDataClass.swift in Sources */,
+				AC8D99B926E7C94E005B883B /* UserDefaultsService.swift in Sources */,
+				AC8D997C26DD2259005B883B /* ViewModel.swift in Sources */,
+				AC8D99AE26E75A0B005B883B /* AvitoFrolov.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC8D996726DD208D005B883B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8D996826DD208D005B883B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC8D996C26DD208F005B883B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8D996D26DD208F005B883B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC8D997026DD208F005B883B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC8D997126DD208F005B883B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC8D997326DD208F005B883B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CD9711E06421A05A3008FF /* Pods-AvitoFrolov.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLHZLR8K7C;
+				INFOPLIST_FILE = AvitoFrolov/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mmmdddaaa.AvitoFrolov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC8D997426DD208F005B883B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393F0D66145078DC8343D19D /* Pods-AvitoFrolov.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLHZLR8K7C;
+				INFOPLIST_FILE = AvitoFrolov/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mmmdddaaa.AvitoFrolov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC8D995926DD208D005B883B /* Build configuration list for PBXProject "AvitoFrolov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8D997026DD208F005B883B /* Debug */,
+				AC8D997126DD208F005B883B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8D997226DD208F005B883B /* Build configuration list for PBXNativeTarget "AvitoFrolov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8D997326DD208F005B883B /* Debug */,
+				AC8D997426DD208F005B883B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC8D99AC26E75A0B005B883B /* AvitoFrolov.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC8D99AD26E75A0B005B883B /* AvitoFrolov.xcdatamodel */,
+			);
+			currentVersion = AC8D99AD26E75A0B005B883B /* AvitoFrolov.xcdatamodel */;
+			path = AvitoFrolov.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC8D995626DD208D005B883B /* Project object */;
+}
