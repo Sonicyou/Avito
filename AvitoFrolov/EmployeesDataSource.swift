@@ -17,7 +17,8 @@ extension EmployeesDataSource: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(
+        guard employeesList.count > indexPath.row,
+              let cell = tableView.dequeueReusableCell(
             withIdentifier: EmployeesTableViewCell.reuseID(),
             for: indexPath
         ) as? EmployeesTableViewCell else {
